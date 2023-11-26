@@ -1,2 +1,5 @@
-console.log("test");
-console.log("test2");
+import { createServer as createNodeServer } from "node:https";
+
+export const createServer = () => {
+  createNodeServer({}, () => {});
+};
